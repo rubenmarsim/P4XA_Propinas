@@ -1,0 +1,2 @@
+android.app.Application
+Propinas_XA.Propinas_XA

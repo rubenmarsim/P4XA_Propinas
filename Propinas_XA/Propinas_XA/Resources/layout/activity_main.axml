@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 	<TextView
 		android:text="Subtotal:"
-		android:gravity="center_vertical"
 		android:gravity="right"
 		android:layout_width="191.5dp"
 		android:layout_height="50.0dp"
@@ -25,7 +24,6 @@
 	/>
 	<TextView
 		android:text="Total (Post-Tax):"
-		android:gravity="center_vertical"
 		android:gravity="right"
 		android:layout_width="191.5dp"
 		android:layout_height="50.0dp"
@@ -46,7 +44,6 @@
 	/>
 	<TextView
 		android:text="Tip Percent:"
-		android:gravity="center_vertical"
 		android:gravity="right"
 		android:layout_width="191.5dp"
 		android:layout_height="50.0dp"
@@ -73,7 +70,6 @@
 	/>
 	<TextView
 		android:text="Tip Value:"
-		android:gravity="center_vertical"
 		android:gravity="right"
 		android:layout_width="191.5dp"
 		android:layout_height="50.0dp"
