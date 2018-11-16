@@ -14,6 +14,12 @@ namespace Propinas_XA
 {
     class TipInfo
     {
+
+        /// <summary>
+        /// Creamos la propiedad Total y en el set 
+        /// le decimos que si total es diferente de
+        /// value que ejecute el metodo OnTipValueChanged
+        /// </summary>
         decimal _Total;
         public decimal Total
         {
@@ -27,7 +33,11 @@ namespace Propinas_XA
                 }
             }
         }
-
+        /// <summary>
+        /// Creamos la propiedad Subtotal y en el set 
+        /// le decimos que si total es diferente de
+        /// value que ejecute el metodo OnTipValueChanged
+        /// </summary>
         decimal _Subtotal;
         public decimal Subtotal
         {
@@ -42,6 +52,11 @@ namespace Propinas_XA
             }
         }
 
+        /// <summary>
+        /// Creamos la propiedad TipPercent y en el set 
+        /// le decimos que si total es diferente de
+        /// value que ejecute el metodo OnTipValueChanged
+        /// </summary>
         decimal _TipPercent;
         public decimal TipPercent
         {
@@ -55,7 +70,10 @@ namespace Propinas_XA
                 }
             }
         }
-
+        /// <summary>
+        /// Creamos el metodo OnTipValueChanged
+        /// que vacia el EventArgs
+        /// </summary>
         private void OnTipValueChanged()
         {
             var h = TipValueChanged;
@@ -64,12 +82,23 @@ namespace Propinas_XA
                 h(this, EventArgs.Empty);
             }
         }
-
+        /// <summary>
+        /// Creamos la propiedad Tax, y en
+        /// el get le decimos que devuelva el
+        /// total menos el subtotal
+        /// </summary>
         public decimal Tax
         {
             get { return Total - Subtotal; }
         }
 
+        /// <summary>
+        /// Creamos la propiedad TipValue, y en el get
+        /// le decimos que si total, subtotal o tippercent es 0
+        /// devuelva 0, luego hacemos el calculo del porcentaje
+        /// y para obtener el tipvalue le decimos que nos haga
+        /// el total menos el calculo que hemos hecho
+        /// </summary>
         public decimal TipValue
         {
             get
@@ -94,7 +123,9 @@ namespace Propinas_XA
                 return value - Total;
             }
         }
-
+        /// <summary>
+        /// creamos el evento TipValueChanged
+        /// </summary>
         public event EventHandler TipValueChanged;
     }
 }
