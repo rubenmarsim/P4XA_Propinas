@@ -15,27 +15,27 @@ namespace Propinas_XA
             TipPercent = 15,
         };
 
-        TextView TipPercent;
+        public TextView TipPercent;
         TextView Total;
         TextView TipValue;
 
         public MainActivity()
         {
-            info.TipValueChanged += (sender, e) =>
-            {
+            info.TipValueChanged += (sender, e) => {
                 TipValue.Text = info.TipValue.ToString();
                 Total.Text = (info.TipValue + info.Total).ToString();
             };
         }
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
+            base.OnCreate(bundle);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            TipValue = FindViewById<TextView>(Resource.Id.txtVwTipValue);
-            Total = FindViewById<TextView>(Resource.Id.txtVwTotal);
-            TipPercent = FindViewById<TextView>(Resource.Id.txtVwTipPercent);
+            TipValue = FindViewById<TextView>(Resource.Id.edtxtTipValue);
+            Total = FindViewById<TextView>(Resource.Id.edtxtTotal);
+            TipPercent = FindViewById<TextView>(Resource.Id.edtxtTipPercent);
+
 
             TipPercent.AfterTextChanged += (sender, e) =>
             {
@@ -44,12 +44,11 @@ namespace Propinas_XA
 
             FindViewById<SeekBar>(Resource.Id.slider).SetOnSeekBarChangeListener(new SeekBarChangeListener(this));
 
-            var subtotal = FindViewById<TextView>(Resource.Id.txtVwSubtotal);
-            subtotal.AfterTextChanged+=(sender, e) =>
-            {
-                info.Subtotal = Parse(Total);
+            var subtotal = FindViewById<TextView>(Resource.Id.edtxtSubtotal);
+            subtotal.AfterTextChanged+=(sender, e) => {
+                info.Subtotal = Parse(subtotal);
             };
-            var total = FindViewById<TextView>(Resource.Id.txtVwTotalPostTax);
+            var total = FindViewById<TextView>(Resource.Id.edtxtTotalPostTax);
             total.AfterTextChanged += (sender, e) =>
               {
                   info.Total = Parse(total);
@@ -86,7 +85,7 @@ namespace Propinas_XA
         }
         public void OnProgressChanged(SeekBar seekBar, int progress, bool fromUser)
         {
-            context.TipPercent.text = progress.ToString();
+            context.TipPercent.Text = progress.ToString();
         }
         public void OnStartTrackingTouch(SeekBar seekBar)
         {

@@ -2438,20 +2438,20 @@ namespace Propinas_XA
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
 			
-			// aapt resource value: 0x7F010003
-			public const int edtxtSubtotal = 2130771971;
+			// aapt resource value: 0x7F010004
+			public const int edtxtSubtotal = 2130771972;
 			
-			// aapt resource value: 0x7F010007
-			public const int edtxtTipPercent = 2130771975;
+			// aapt resource value: 0x7F010008
+			public const int edtxtTipPercent = 2130771976;
 			
-			// aapt resource value: 0x7F010010
-			public const int edtxtTipValue = 2130771984;
+			// aapt resource value: 0x7F010011
+			public const int edtxtTipValue = 2130771985;
 			
-			// aapt resource value: 0x7F010012
-			public const int edtxtTotal = 2130771986;
+			// aapt resource value: 0x7F010013
+			public const int edtxtTotal = 2130771987;
 			
-			// aapt resource value: 0x7F010005
-			public const int edtxtTotalPostTax = 2130771973;
+			// aapt resource value: 0x7F010006
+			public const int edtxtTotalPostTax = 2130771974;
 			
 			// aapt resource value: 0x7F0C002D
 			public const int end = 2131492909;
@@ -2639,8 +2639,8 @@ namespace Propinas_XA
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
 			
-			// aapt resource value: 0x7F010008
-			public const int slider = 2130771976;
+			// aapt resource value: 0x7F010009
+			public const int slider = 2130771977;
 			
 			// aapt resource value: 0x7F0C006B
 			public const int smallLabel = 2131492971;
@@ -2742,19 +2742,22 @@ namespace Propinas_XA
 			public const int transition_transform = 2131493003;
 			
 			// aapt resource value: 0x7F010002
-			public const int txtVwSubtotal = 2130771970;
+			public const int txtVwNombre = 2130771970;
 			
-			// aapt resource value: 0x7F010006
-			public const int txtVwTipPercent = 2130771974;
+			// aapt resource value: 0x7F010003
+			public const int txtVwSubtotal = 2130771971;
 			
-			// aapt resource value: 0x7F010009
-			public const int txtVwTipValue = 2130771977;
+			// aapt resource value: 0x7F010007
+			public const int txtVwTipPercent = 2130771975;
 			
-			// aapt resource value: 0x7F010011
-			public const int txtVwTotal = 2130771985;
+			// aapt resource value: 0x7F010010
+			public const int txtVwTipValue = 2130771984;
 			
-			// aapt resource value: 0x7F010004
-			public const int txtVwTotalPostTax = 2130771972;
+			// aapt resource value: 0x7F010012
+			public const int txtVwTotal = 2130771986;
+			
+			// aapt resource value: 0x7F010005
+			public const int txtVwTotalPostTax = 2130771973;
 			
 			// aapt resource value: 0x7F0C008C
 			public const int uniform = 2131493004;

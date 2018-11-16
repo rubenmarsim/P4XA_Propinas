@@ -86,8 +86,7 @@ namespace Propinas_XA
                 int f = (int)(fract * 100);
                 while ((f % 25) != 0)
                 {
-                    f++;
-
+                    ++f;
                 }
                 fract = f;
                 fract /= 100;
